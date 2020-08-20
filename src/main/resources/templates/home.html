@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Covid 19 Tracking App</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- CSS only -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body class="container" style="background-color: rgb(255, 255, 128)">
+
+	<h1>Corona Tracker Application</h1>
+	<p>Total Current Number of cases reported across the Global</p>
+	<div class="jumbotron">
+		<h1 class="display-4" th:text="${totalreportedcases}"></h1>
+		<p class="lead">Total No.of cases as of Today</p>
+		<hr class="my-4">
+		<span> New cases world wide since reported previous day </span>
+		<span th:text="${totalnewcases}"> </span>
+	</div>
+
+	<div >
+		<table class="table">
+			<tr>
+				<th>State</th>
+				<th>Country</th>
+				<th>Total cases reported</th>
+				<th>changes since Lastday</th>
+			</tr>
+			<tr th:each="locationstat: ${locationstats}">
+				<td th:text="${locationstat.state}" />
+				<td th:text="${locationstat.country}" />
+				<td th:text="${locationstat.latestTotalcases}"></td>
+				<td th:text="${locationstat.diffFromPrevDay}"></td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+
+</html>
