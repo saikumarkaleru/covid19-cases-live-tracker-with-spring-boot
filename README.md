@@ -3,7 +3,7 @@
 
 # Tools and Technologies
 * html,css,bootstrap
-* Spring Boot
+* Spring Boot 2.1.16.RELEASE
 * Maven
 ## Maven Dependencies
 * Spring Web
