@@ -1,5 +1,6 @@
 
-# Covid19-Tracker-with-Spring-Boot [https://covid19-cases-track.herokuapp.com/](https://covid19-cases-track.herokuapp.com/)
+# Covid19-Tracker-with-Spring-Boot <br>
+# [https://covid19-cases-track.herokuapp.com/](https://covid19-cases-track.herokuapp.com/)
 
 # Tools and Technologies
 * html,css,bootstrap
