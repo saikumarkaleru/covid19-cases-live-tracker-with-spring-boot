@@ -21,5 +21,5 @@
 * git push heroku 
 
 ## [covid 19 cases Data refernce Link](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
-### img
+### img screenshot
 ![](https://github.com/saikumarkaleru/covid19-cases-live-tracker/blob/master/src/main/resources/static/Screenshot%20(216).png)
